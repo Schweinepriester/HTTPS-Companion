@@ -1,0 +1,26 @@
+{
+  "name": "https-companion",
+  "version": "0.0.1",
+  "description": "Personal script to HTTPS-ify stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schweinepriester/HTTPS-Companion.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Schweinepriester/HTTPS-Companion/issues"
+  },
+  "homepage": "https://github.com/Schweinepriester/HTTPS-Companion",
+  "dependencies": {
+    "zx": "~6.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0"
+  }
+}
