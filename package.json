@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Schweinepriester/HTTPS-Companion",
   "dependencies": {
-    "zx": "~6.1.0"
+    "zx": "~7.0.7"
   },
   "devDependencies": {
     "eslint": "~8.15.0",
