@@ -1,8 +1,14 @@
 #! /usr/bin/env node
-// Usage, for example:
-// ```sh
-// node index.mjs --repo nodeca/js-yaml
-// ```
+/**
+ * Usage, for example:
+ * 
+ * ```sh
+ * node index.mjs --repo nodeca/js-yaml
+ * ```
+ * 
+ * In Codespaces, log out from gh first and log back in to get proper rights.
+ * TODO Add commands for that
+*/ 
 import {
     $, argv, chalk, cd,
 } from 'zx';
@@ -38,7 +44,7 @@ const repoPath = 'repos';
 // https://cli.github.com/manual/gh_repo_clone
 await $`mkdir -p ${repoPath}`;
 cd(repoPath);
-await $`gh repo clone ${githubOwnerRepo}`; // TODO await $`gh repo fork ${githubOwnerRepo} --clone`;
+await $`gh repo fork ${githubOwnerRepo} --clone`;
 
 const repoName = githubOwnerRepo.split('/')[1]; // e.g. "nodeca/js-yaml" => "js-yaml"
 cd(repoName);
